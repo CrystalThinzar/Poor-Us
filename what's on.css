@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #E8CDA8;
+}
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #ced4da;
+}
+.logo{
+    width: 10%;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background:#e7f5ff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px white;
+    z-index: 10;
+    position: sticky;
+}
+.group{
+    display: flex;
+    align-items: center;
+}
+.iron{
+    color: black;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    text-transform: upaercase;
+    letter-spacing: 2px;
+}
+header ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #343a40;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+header ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+header .search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.searchbox{
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: white;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+}
+.searchbox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: black;
+    font-size: 1.25em;
+    background: white;
+    border-bottom: 1px solid black;
+}
+.search input{
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 10px;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.logo{
+    width: 100px;
+}
+.error1{
+  width: 100%;
+    height: 800px;
+    background-image:url(x-real.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    opacity: 70% ;
+    padding: 100px;
+    text-align: center;
+    color:  #343a40;
+}
+.error2{
+  width: 50%;
+}
+.error2-1{
+  background-color: #868e96;
+  float: center;
+  display: flex;
+  color: #343a40;
+  text-align: justify;
+}
+.error3{
+  width: 50%;
+}
+.error3-1{
+  background-color: #868e96;
+  float: center;
+  display: flex;
+  color: #343a40;
+  text-align: justify;
+}
+.error4{
+  width: 50%;
+}
+.error4-1{
+  background-color: #868e96;
+  float: center;
+  display: flex;
+  color: #343a40;
+  text-align: justify;
+}
+.error5{
+  width: 50%;
+}
+.error5-1{
+  background-color: #868e96;
+  float: center;
+  display: flex;
+  color: #343a40;
+  text-align: justify;
+
+}
+.logo2{
+    width: 10%;
+    padding: 10px;
+    margin: 10px;
+}
+.info{
+    width: 50%;
+    padding: 0px 30px;
+}
+footer{
+background-color: #868e96;
+color: #343a40;
+float: center;
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.f_logo{width: 20%;}
+ .f_logo img{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+.f_info{
+    width: 45%;
+    padding: 0px 20px;
+   
+}
+.f_address{width: 35%;padding: 0px 20px;}  
+.f_info h3, .f_info p{width: 100%;}
+.f_address h3, .f_address p{width: 100%;}
+@media only screen and (max-width: 700px){
+
+    footer{flex-direction: column;}
+}
+form input{
+background: transparent;
+  border: 2px solid black;
+  color: #343a40;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px;
+}
+form button{
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		header{
+			display: flex;
+			position: fixed;
+			top: 0; left: 0; right: 0;
+			align-items: center;
+			background-color: #B3AA99;
+			color: red;
+			list-style-type:none;
+			text-indent: 50px;
+			overflow: hidden;
+		}
+		header *{display: inline;}
+		header img{height: 80px;}
+
+		header a:hover:not(.active){
+	background-color: #4D4637;
+	color: #B3AA99;
+}	
+</style>
+</head>
+<body>
+<header>
+	<ul class="nav_bar">
+		<a href="#">Home</a>
+		<li><a href="#">About us</a></li>
+		<li><a href="#">Artist</a></li>
+		<li><a href="#">Exhibitions</a></li>
+		<li><a href="#">Visit us</a></li>
+		<li><a href="#">Contact us</a></li>
+	</ul>
+</header>
+</body>
+</html>
